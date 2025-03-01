@@ -11,10 +11,10 @@
     <Grid>
 		<StackPanel Margin="10">
 			<TextBlock Text="Universal Calculator" FontSize="24" FontWeight="Bold" Foreground="DarkBlue" HorizontalAlignment="Center" Margin="10"/>
-			<Button Content="Maths Calculator" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10"/>
-			<Button Content="Mortgage Calculator" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10"/>
-			<Button Content="Currency Converter" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10"/>
-			<Button Content="Exit" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10"/>
+			<Button x:Name="ButtonMathsCal" Content="Maths Calculator" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10" Click="ButtonMathsCal_Click"/>
+			<Button x:Name="ButtonMortgageCal" Content="Mortgage Calculator" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10" Click="ButtonMortgageCal_Click"/>
+			<Button x:Name="ButtonCurrencyCon" Content="Currency Converter" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10" Click="ButtonCurrencyCon_Click"/>
+			<Button x:Name="ButtonExit" Content="Exit" Width="200" Height="50" Background="#C0A98E" HorizontalAlignment="Center" Margin="10"/>
 		</StackPanel>
 	</Grid>
 </Page>
