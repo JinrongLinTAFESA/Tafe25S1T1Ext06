@@ -33,11 +33,11 @@
 				<TextBox x:Name="monthlyIntrestRateTextBox" FontSize="25" Margin="10" Width="300" IsEnabled="False"/>
 			</StackPanel>
 			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-				<TextBlock Text="Monthly Repayment $:" FontSize="30" Margin="10"/>
+				<TextBlock Text="Monthly Repayment:" FontSize="30" Margin="10"/>
 				<TextBox x:Name="monthlyRepaymentTextBox" FontSize="25" Margin="10" Width="300" IsEnabled="False"/>
 			</StackPanel>
-			<Button x:Name="calculateButton" HorizontalAlignment="Center" Content="Calculate" Margin="10" FontSize="40" Width="200"/>
-			<Button x:Name="exitButton" HorizontalAlignment="Center" Content="Exit" Margin="10" FontSize="40" Width="200"/>
+			<Button x:Name="calculateButton" HorizontalAlignment="Center" Content="Calculate" Margin="10" FontSize="40" Width="200" Click="calculateButton_Click"/>
+			<Button x:Name="exitButton" HorizontalAlignment="Center" Content="Exit" Margin="10" FontSize="40" Width="200" Click="exitButton_Click"/>
 		</StackPanel>
 	</Grid>
 </Page>
