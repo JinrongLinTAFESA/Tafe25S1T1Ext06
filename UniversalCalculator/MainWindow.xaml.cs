@@ -41,5 +41,10 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(MainPage));
 		}
+
+		private void ButtonExit_Click(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Exit();
+		}
 	}
 }
