@@ -9,6 +9,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
-    </Grid>
+		<StackPanel HorizontalAlignment="Center">
+			<TextBlock x:Name="titleTextBlock" Text="Currency Conversion Calculator" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
+			<StackPanel Orientation="Horizontal">
+				<StackPanel>
+					<TextBlock x:Name="amountTextBlock" Width="80" Text="Amount $" FontSize="16" Margin="10"/>
+					<TextBox x:Name="amountTextBox" Width="160" FontSize="14" Margin="10"/>
+				</StackPanel>
+				<StackPanel>
+					<TextBlock x:Name="fromTextBlobk" Text="From" FontSize="16" Margin="10"/>
+					<ComboBox Name="frCurrencyComboBox" Width="150" Margin="10">
+						<ComboBoxItem Content="USD" IsSelected="True"/>
+						<ComboBoxItem Content="EUR"/>
+						<ComboBoxItem Content="GBP"/>
+						<ComboBoxItem Content="INR"/>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel>
+					<TextBlock x:Name="toCurrencyTextBlock" Text="To" FontSize="16" Margin="10"/>
+					<ComboBox x:Name="toCurrencyComboBox" Width="150" Margin="10">
+						<ComboBoxItem Content="USD" IsSelected="True"/>
+						<ComboBoxItem Content="EUR"/>
+						<ComboBoxItem Content="GBP"/>
+						<ComboBoxItem Content="INR"/>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center">			
+				<TextBox x:Name="resultTextBox" PlaceholderText="Result will appear here" IsReadOnly="True" Width="400" />
+				<Button x:Name="convertButton" Content="Currency Conversion" Width="200" Height="40" Margin="10"  HorizontalAlignment="Center" Click="convertButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" Width="100" Height="30" Margin="10" HorizontalAlignment="Center" Click="exitButton_Click"/>
+			</StackPanel>			
+			
+		</StackPanel>
+	</Grid>
 </Page>
