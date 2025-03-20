@@ -6,9 +6,38 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="White"
+	RequestedTheme="Light">
 
-    <Grid>
-
-    </Grid>
+    <Grid HorizontalAlignment="Center" Margin="20">
+		<StackPanel HorizontalAlignment="Center" >
+			<TextBlock Text="Mortgage Calculator" FontSize="75" FontWeight="Bold"/>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Principal Borrow $:" FontSize="30" Margin="10"/>
+				<TextBox x:Name="principalBorrowTextBox" FontSize="25" Margin="10" Width="300"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Years:" FontSize="30" Margin="10"/>
+				<TextBox x:Name="yearsTextBox" FontSize="25" Margin="10" Width="300"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Months:" FontSize="30" Margin="10"/>
+				<TextBox x:Name="monthsTextBox" FontSize="25" Margin="10" Width="300"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Yearly Intrest Rate:" FontSize="30" Margin="10"/>
+				<TextBox x:Name="yearlyIntrestRateTextBox" FontSize="25" Margin="10" Width="300"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Monthly Intrest Rate:" FontSize="30" Margin="10"/>
+				<TextBox x:Name="monthlyIntrestRateTextBox" FontSize="25" Margin="10" Width="300" IsEnabled="False"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+				<TextBlock Text="Monthly Repayment:" FontSize="30" Margin="10"/>
+				<TextBox x:Name="monthlyRepaymentTextBox" FontSize="25" Margin="10" Width="300" IsEnabled="False"/>
+			</StackPanel>
+			<Button x:Name="calculateButton" HorizontalAlignment="Center" Content="Calculate" Margin="10" FontSize="40" Width="200" Click="calculateButton_Click"/>
+			<Button x:Name="exitButton" HorizontalAlignment="Center" Content="Exit" Margin="10" FontSize="40" Width="200" Click="exitButton_Click"/>
+		</StackPanel>
+	</Grid>
 </Page>
